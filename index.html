@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html practices</title>
+    <link rel="icon" type="image/png" size="32*32" href="favicon-32x32.png">
+    <style>
+        .myfirstclass{
+            color: blue;
+        }
+        #myfirstid{
+            color: rgb(28, 156, 77);
+        }
+        .inline{
+            background-color: blueviolet;
+        }
+        .block{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(30, 207, 148);">This is the 
+    start of something new...</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae commodi veniam adipisci, sed earum error alias consequuntur possimus incidunt dicta reiciendis rerum autem sapiente quisquam impedit. Nulla, blanditiis minus. Et asperiores repudiandae minima odit.</p>
+
+    <h2>This is the second thing to do</h2>
+
+    <h3>It will look like this...</h3>
+
+    <h6>what about this....</h6>
+
+    <p class="myfirstclass">hello this is the first class</p>
+
+    <p id="myfirstid">hello this is the first id</p>
+
+    <hr> <!--horizontal tag-->
+
+    <br> <!--line break tag-->
+
+    <a href="https://www.google.com/">google</a>
+
+    <br>
+    <br>
+
+    <img src="scenary.jpg" alt="Description" width="300" height="100" />
+    <pre>
+    <code>
+        <!--When to Use the <pre> Tag?
+The <pre> tag is most effective when you want the text to display on your HTML page exactly as it was typed, without any formatting changes. It is especially useful for displaying code snippets or preformatted text from data files.--> 
+
+    this is the code for hello world in c++
+
+    #include &lt;iostream&gt;
+    using namespace std;
+
+    int main(){
+        cout<<"hello world";
+    }
+    </code>
+    </pre>
+
+    <span class="inline">this is <strong>important</strong> text.</span>
+
+    <h4 class="block">this takes full horizontal space of screen</h4>
+
+    <h2>Example of html unordered list</h2>
+    <ul type="square"> <!--disc,square,circle-->
+        <li>pen</li>
+        <li>pencil</li>
+        <li>eraser</li>
+    </ul>
+
+    <h2>Example of ordered list</h2>
+    <ol type="A" start="2">
+        <li>notebook</li>
+        <li>notes</li>
+        <li>learn</li>
+    </ol>
+
+    <h2>Example of defination list</h2>
+    <dl>
+        <dt>html</dt>
+        <dd>html is hyper text markup language</dd>
+        <br>
+        <dt>CSS</dt>
+    <dd>Cascading Style Sheets: A stylesheet language used for describing the look and formatting of a document written in HTML.</dd>
+        <br>
+    <dt>JavaScript</dt>
+    <dd>A programming language commonly used in web development to add interactive features.</dd>
+    </dl>
+
+    <table border="1">
+        <th>Table for orders</th>
+        <tr colspan="1">
+            <td>first order</td>
+            <td>second order</td>
+            <td>third order</td>
+        </tr>
+    </table>
+       <br> 
+    <table border="1">
+        <tr>
+        <td colspan="2">Merged Columns</td>
+         </tr>
+        <tr>
+      <td>Column 1</td>
+      <td>Column 2</td>
+         </tr>
+    </table>
+    <br>
+    
+   <table border="1">
+        <tr>
+        <td>Row 1, Column 1</td>
+        <td rowspan="2">Merged Rows</td>
+        </tr>
+        <tr>
+        <td>Row 2, Column 1</td>
+        </tr>
+    </table>
+    <br>
+
+    <table border="1">
+        <!-- Caption -->
+        <caption>Employee Information</caption>
+    
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+    
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>Developer</td>
+                <td>$80,000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>Designer</td>
+                <td>$70,000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Carol</td>
+                <td>Manager</td>
+                <td>$90,000</td>
+            </tr>
+        </tbody>
+    
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Employees</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+
+    <table border="1">
+
+        <caption>student marks</caption>
+        <colgroup> <!--colgroup and col element use for styles -->
+            <col style="background-color: rgb(43, 226, 70);">
+            <col style="background-color: rgb(245, 151, 244);">
+            <col style="background-color: rgb(19, 188, 235);">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col" >roll no</th>
+                <th scope="col" >name</th>
+                <th scope="col" >marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>arp</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>pri</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>aya</td>
+                <td>97</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>sam</td>
+                <td>63</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">total students</td>
+                <td>4</td>
+            </tr>   
+        </tfoot>
+    </table>
+
+        <br>
+     <form action="/submit" method="post">
+    <!-- Text input for username -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br><br>
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <!-- Radio buttons for gender -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+    </form>
+
+    <br>
+
+    <form action="/submit">
+    <textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea>
+    <select name="fruits">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="cherry">Cherry</option>
+    </select>
+    <input type="submit" value="Submit">
+    </form>
+
+    <form action="submit">
+        <textarea name="comment" id="" cols="50" rows="5">Enter your reviews here...</textarea>
+        <select name="cars" id="">
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="RR">Rolls Royce</option>
+        </select>
+        <input type="submit" value="submit">
+    </form>
+
+    <video width="500" height="500" src="bmw.mp4" autoplay muted loop></video>
+
+    <br>
+
+    <audio src="ncs.mp3" controls ></audio>
+
+        <br>
+    <svg height="100" width="100">
+        <rect width="100" height="100" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+    </svg>
+    <br>
+    
+    <iframe src="favicon.png" frameborder="1"></iframe>
+
+        <br>
+    
+    
+        <!--semantic tags-->
+        <header> 
+            <h1>My Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <footer>
+            <p>Copyright 2023</p>
+        </footer>
+
+
+        <article>
+            <h2>Article Title</h2>
+            <section>
+              <p>Content here</p>
+            </section>
+        </article>
+
+        
+        <aside>
+            <p>This is an aside content</p>
+          </aside>
+        <nav>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="image.jpg" alt="An example image">
+            <figcaption>This is an example image.</figcaption>
+        </figure>
+</body>
+</html>
